@@ -1,0 +1,52 @@
+#body {
+    margin: 0;
+    padding: 0;
+}
+
+#logo {
+    color: black;
+    font-size: 30pt;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+
+#dot {
+    color: rgb(255, 53, 93);
+}
+
+#menu {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: black;
+    
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 20;
+    background-color: blueviolet;
+}
+
+.navitem {
+    text-decoration: none;
+    color: black;
+}
+
+#hero {
+    display: flex;
+}
+
+#herotext {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+#heroimg {
+    height: 30vh;
+}
