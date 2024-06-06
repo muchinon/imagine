@@ -55,3 +55,37 @@ for (let i = 0;  i <= 5; i+=3) {
 }
 
 
+// Functions
+//Defining a function
+function login(username, password) {
+  // validate the username and password
+  if (!username || !password) {
+    return 'user lock in status not provided';
+  }
+  // verify username and password
+  if (username == 'berial' && password == '1234') {
+    return 'user is locked in';
+} else {
+  return 'Youre definitely not locked in';
+}
+}
+
+//invoking a function
+login('berial','1234');
+
+
+
+// Basic Arithmetic Operations
+790 + 50;
+0.9 - 0.1;
+60 / 7
+60 * 2;
+15 % 4; // modulo
+
+Math.round (45/24)
+
+//Converting strings to numbers
+Number ('2') + Number ('2') * Number ('6')
+
+
+
