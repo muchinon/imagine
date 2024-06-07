@@ -87,5 +87,37 @@ Math.round (45/24)
 //Converting strings to numbers
 Number ('2') + Number ('2') * Number ('6')
 
+// Strings in JavaScript
+// Concatenation
+const firstname = 'Felix';
+const lastname = 'Kojo';
+const middlename = '';
+
+firstname + ' ' + lastname;
+
+// Template literal
+`${firstname} ${middlename} ${lastname}`;
+
+//String Methods
+
+let fullName = 'Felix Kojo'
+fullName.length
+fullName. toUpperCase()
+fullName.toLowerCase()
+fullName.charAt(3)
+fullName.slice(0,5)
+fullName.split("")
+fullName.replace("Kojo", "Cefa")
+fullName.indexOf("Kojo")
+
+//string conversion
+Number("3.243")
+parseInt("3.243")
+parseFloat("3.243")
+let amount = 18000
+console.log(`GHS$(amount)`)
+amount.toString()
+
+
 
 
