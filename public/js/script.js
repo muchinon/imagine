@@ -1,7 +1,7 @@
 const btn = document.getElementById('btn');
 btn.onclick = function () {
-    const name = prompt('Enter your full name');
-    document.getElementById('name').innerText = name;
+  const name = prompt('Enter your full name');
+  document.getElementById('name').innerText = name;
 }
 
 //Variables
@@ -12,26 +12,26 @@ let present = false;
 
 // Objects
 const person = {
-    username: 'berial',
-    age: 12,
-    present: false,
-    child: {
-        name: 'Duster',
-        age: 200,
-        friend: {
-            name: 'Cockroach',
-            age: 4000
-
-        }
+  username: 'berial',
+  age: 12,
+  present: false,
+  child: {
+    name: 'Duster',
+    age: 200,
+    friend: {
+      name: 'Cockroach',
+      age: 4000
 
     }
+
+  }
 }
 console.log(person.username);
 person.age = 29;
 console.log(person);
 
 
-const bottles = [bottle1,bottle2];
+const bottles = [bottle1, bottle2];
 bottles.push(bottle1);
 bottles;
 
@@ -50,7 +50,7 @@ if (age >= 18) {
 }
 
 // For loop
-for (let i = 0;  i <= 5; i+=3) {
+for (let i = 0; i <= 5; i += 3) {
   console.log('We did it!', i)
 }
 
@@ -65,13 +65,13 @@ function login(username, password) {
   // verify username and password
   if (username == 'berial' && password == '1234') {
     return 'user is locked in';
-} else {
-  return 'Youre definitely not locked in';
-}
+  } else {
+    return 'Youre definitely not locked in';
+  }
 }
 
 //invoking a function
-login('berial','1234');
+login('berial', '1234');
 
 
 
@@ -82,10 +82,10 @@ login('berial','1234');
 60 * 2;
 15 % 4; // modulo
 
-Math.round (45/24)
+Math.round(45 / 24)
 
 //Converting strings to numbers
-Number ('2') + Number ('2') * Number ('6')
+Number('2') + Number('2') * Number('6')
 
 // Strings in JavaScript
 // Concatenation
@@ -102,10 +102,10 @@ firstname + ' ' + lastname;
 
 let fullName = 'Felix Kojo'
 fullName.length
-fullName. toUpperCase()
+fullName.toUpperCase()
 fullName.toLowerCase()
 fullName.charAt(3)
-fullName.slice(0,5)
+fullName.slice(0, 5)
 fullName.split("")
 fullName.replace("Kojo", "Cefa")
 fullName.indexOf("Kojo")
@@ -117,6 +117,54 @@ parseFloat("3.243")
 let amount = 18000
 console.log(`GHS$(amount)`)
 amount.toString()
+
+
+// Write a function that will add a participant to our Google Classroom
+// let email = prompt ('Enter email')
+// let passcode = prompt ('Enter passcode')
+
+
+const participants = [];
+function addParticipant(email) {
+  // Check if email was provided you can also use (!email - not email)
+  if (email === undefined || email === null) {
+    return 'No email Provided'
+  }
+
+  // Check if email is valid
+  if (!email.includes('@')) {
+    return 'Invalid email provided'
+  }
+
+  // Add email to participants
+  participants.push(email);
+  return 'Participant added';
+}
+
+addParticipant('mickeymond@yahoo.com');
+addParticipant('mickeymoused@yahoo.com');
+addParticipant();
+participants;
+
+
+// Arrays in JavaScript
+
+const users = [
+  {
+    username: 'koko',
+    password: '12234',
+    email: 'koko@gmail.com'
+
+  },
+
+  {
+    username: 'croco',
+    password: '123234',
+    email: 'croco@gmail.com'
+
+  }
+];
+
 
 
 
