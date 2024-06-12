@@ -214,6 +214,50 @@ isEven(9)
 numbers.filter(isEven);
 
 
+// Write a dunction that will allow a user to reset their password
+
+// const user = {
+//   email: 'kokomoney@gmail.com',
+//   password: '1234'
+// }
+
+// function resetPassword (password){
+//   if (password === '1234'){
+//     return 'Login Password'
+//   }
+//   else {
+//     return 'Reset password'
+//   }
+  
+  
+// }
+
+// resetPassword ('2345')
+
+function resetPassword(email, newPassword){
+  // Check if email and new password was provided
+    if (!email || !newPassword){
+      return 'Email or password not provided';
+    }
+    // 
+    if (email === user.email){
+      user.password =newPassword;
+      return 'Password reset successful'
+    }
+  
+  // Check if provided email is correct
+  if (email !== user.email) {
+    return 'Incorrect email'
+  }
+    
+  }
+  
+  
+  user;
+  resetPassword('kokomoney@gmail.com', 6790);
+  user;
+
+
 
 
 
